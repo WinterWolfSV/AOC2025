@@ -10,7 +10,7 @@
 | 4   | [⭐](src/D04/D04P1.c) | [⭐](src/D04/D04P2.c) |
 | 5   | [⭐](src/D05/D05P1.c) | [⭐](src/D05/D05P2.c) |
 | 6   | [⭐](src/D06/D06P1.c) | [⭐](src/D06/D06P2.c) |
-| 7   | [ ](src/D07/D07P1.c)  | [ ](src/D07/D07P2.c)  |
+| 7   | [⭐](src/D07/D07P1.c) | [⭐](src/D07/D07P2.c) |
 | 8   | [ ](src/D08/D08P1.c)  | [ ](src/D08/D08P2.c)  |
 | 9   | [ ](src/D09/D09P1.c)  | [ ](src/D09/D09P2.c)  |
 | 10  | [ ](src/D10/D10P1.c)  | [ ](src/D10/D10P2.c)  |
