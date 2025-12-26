@@ -28,9 +28,9 @@ typedef struct HashSet {
 } HashSet;
 
 int compare(const void *a, const void *b) {
-  int *valA = a;
-  int *valB = b;
-  return *valB - *valA;
+  int valA = *((int *)a);
+  int valB = *((int *)b);
+  return valB - valA;
 }
 
 Node *createNode(int *p1, int *p2, long dist){
@@ -203,12 +203,29 @@ int main(){
       counter[set->vals[j]-1]++; 
     }
   }
-  // Yes this causes a warning but it works.
+
   qsort(counter, i, sizeof(counter[0]), compare);
   for(j = 0; j < 3; j++){
     tot *= counter[j];
   }
 
   printf("%lu", tot);
+
   free(line);
+  for(i = 0; i < size; i++){
+    free(points[i]);
+  }
+  free(points);
+  p = list->first;
+  Node *ntmp;
+  while(p){
+    ntmp = p;
+    p = p->next;
+    free(ntmp);
+  }
+  free(list);
+  free(set->keys);
+  free(set->vals);
+  free(set);
+  free(counter);
 }
